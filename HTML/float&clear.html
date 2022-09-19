@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+
+    }
+    body{
+        font-weight: 'lighter','sans-serif';
+    }
+    .container{
+        width: 800px;
+        border: 3px solid purple;
+        margin: 33px auto;
+        background-color: rgb(194, 223, 235);
+
+    }
+    .item{
+        border: 2px solid rgb(78, 66, 66);
+        margin: 12px 3px;
+        padding: 12px 3px;
+        background-color: rgb(226, 147, 147);
+
+    }
+    #fruit{
+        float: left;
+        width: 48%;
+    }
+    #computer{
+        float: left;
+        width: 48%;
+
+    }
+    #stationay{
+        /* float: left; */
+        clear: both;
+        width: 100%;
+
+    }
+    p,h3{
+        text-align: justify;  /*left right,center justify*/
+    }
+    h1{
+        margin:23px auto;
+        width: 455px;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Welcom to my store</h1>
+        <div id="fruit" class="item">
+            <h3>fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, repellendus mollitia soluta, voluptates, aliquam possimus ab amet veniam nesciunt officiis maxime modi eos! Soluta quam architecto placeat dolorum doloremque perspiciatis aliquam totam aliquid perferendis.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, repellendus mollitia soluta, voluptates, aliquam possimus ab amet veniam nesciunt officiis maxime modi eos! Soluta quam architecto placeat dolorum doloremque perspiciatis aliquam totam aliquid Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus dolorum libero rerum ex laudantium deserunt animi facilis totam illum rem voluptates consequuntur facere enim officiis doloremque, est fuga natus corrupti excepturi, nisi id recusandae?</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationay</h3>
+            <p id="stationaypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, repellendus mollitia soluta, voluptates, aliquam possimus ab amet veniam nesciunt officiis maxime modi eos! Soluta quam architecto placeat dolorum doloremque perspiciatis aliquam totam aliquid perferendis Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero ratione ut magnam non repudiandae corporis quod tenetur omnis officia excepturi quas, quia minima? Incidunt quis debitis, veritatis rem et doloremque omnis commodi voluptatem at. .</p>
+        </div>
+        <div id="glasses" class="item">
+            <h3>Stationay</h3>
+            <p id="glassespara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, repellendus mollitia soluta, voluptates, aliquam possimus ab amet veniam nesciunt officiis maxime modi eos! Soluta quam architecto placeat dolorum doloremque perspiciatis aliquam totam aliquid perferendis Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero ratione ut magnam non repudiandae corporis quod tenetur omnis officia excepturi quas, quia minima? Incidunt quis debitis, veritatis rem et doloremque omnis commodi voluptatem at. .</p>
+        </div>
+    </div>
+</body>
+</html>

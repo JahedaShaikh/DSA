@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+#logo{
+    display: flex;
+    color: white;
+    margin: 0 14px;
+    margin-right: 40px;
+}
+#logo img{
+    height: 42px;
+
+}
+
+#navbar{
+    background-color: black;
+    padding: 13px 14px;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+
+}
+
+#navbar li{
+    list-style: none;
+}
+
+#navbar li a{
+    font-size: 23px;
+    color: white;
+    text-decoration: none;
+    padding: 13px 30px;
+}
+#navbar li a:hover{
+    color: rgb(160, 86, 86);
+}
+
+#introSection{
+    padding-bottom: 50px;
+    color: rgb(248, 242, 242);
+    display: flex;
+    font-size: 35px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 425px;
+    background-color: red;
+    background: center / cover no-repeat url("/static/img/bgimg.jpg");
+
+}
+#introSection div.small{
+    font-size: 27px;
+}
+
+#sponsorsSection{
+    text-align: center;
+    padding: 15px;
+    height: 330px;
+    background-color: rgb(247, 190, 157);
+
+}
+#missionSection{
+    margin: auto;
+    width: 100%;
+    height: 400px;
+    background-color:white;
+
+}
+
+#missionSection h2{
+    text-align: center;
+    padding: 15px;
+    
+}
+.card{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 29%;
+    height: 270px;
+    margin: 5px 22px;
+    display: inline-block;
+    background-color: rgb(221, 119, 195);
+
+}
+.card h3{
+    text-align: center;
+    margin: 12px;
+    font-size: 16px;
+
+}
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-img{
+    height: 150px;
+    padding: 0 10px;
+    margin: 3px 7px;
+}
+.card-img img{
+    height: inherit;
+}
+.card-content{
+    padding: 0 8px;
+}
+.card-content p{
+    font-size: 14px;
+}
+
+#sponsors{
+    height: 191px;
+    min-width: 1000px;
+    margin: 27px auto;
+}
+.spImage{
+    height: 70%;
+    margin: 25px;
+}
+
+#footer{
+    display: flex;
+    color: white;
+    height: 50px;
+    background-color: rgb(17, 14, 14);
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+
+}

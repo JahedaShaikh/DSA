@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Layouts Using Grid Template Area</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+        .item{
+            background-color: yellow;
+            border: 3px solid black;
+            padding: 12px 23px;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        #footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+        <div class="item">Item-11</div> -->
+        <div id="navbar"class="item">
+            Home About Contact Us
+        </div>
+        <div id="section"class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ut laborum accusantium facilis sequi iste ratione.
+        </div>
+        <div id="aside"class="item">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus repudiandae optio aut id quaerat, soluta quam praesentium in nesciunt illo.
+        </div>
+        <footer class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, repudiandae! Repellat molestias omnis amet unde, dolorem in. Doloremque reiciendis cupiditate, quam reprehenderit doloribus dolores voluptatum consequuntur quos labore aliquid autem id recusandae. Vel, ducimus.</footer>
+    </div>
+    
+</body>
+</html>

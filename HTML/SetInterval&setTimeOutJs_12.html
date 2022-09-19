@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetInterval And setTimeOut</title>
+</head>
+<body>
+    <div class="container">
+        Time now is <span id="Time"></span>
+    </div>
+    
+    
+    </body>
+    <script>
+    // console.log("This is JavaScript program")
+    // function greet(name,byeText){
+    //     console.log('Hello Good Morning'+ name +" "+byeText);
+    // }
+    // timeOut= setTimeout(greet,5000,'shanaya','take care');
+    // console.log(timeOut)
+
+    // clearTimeout(timeOut)
+    
+
+    // interval=setInterval(greet,1000,'shanaya','good night')
+    // clearInterval(interval)
+
+
+
+    function displaytime(){
+        time=new Date();
+        console.log(time);
+        document.getElementById('time').innerHTML=time;
+    }
+    setInterval(displaytime,1000)
+</script>
+</html>

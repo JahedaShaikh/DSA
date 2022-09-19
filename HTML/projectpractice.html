@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: 2px solid red;
+        font-weight: bold;
+        text-align: center;
+       
+    }
+    .left{
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 20px;
+        top: 15px;
+        margin: 0px;
+        padding: 10px;
+        font-size: 10px;
+        font-style: italic;
+        color: rgb(236, 223, 223)
+
+    }
+    .left img {
+        width: 70px;
+        height: 50px;
+        filter: invert(100%);
+    }
+    .mid{
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        width: 44%;
+        display: block;
+        margin: 10px auto;
+        padding: 10px;
+        right: 15px;
+        /* position: sticky; */
+
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        text-decoration: none;
+    }
+    .navbar li a{
+        display: inline-block;
+        text-decoration: underline;
+        padding: 15px;
+        color: rgb(189, 217, 221);
+        background-color: black;
+        border-radius: 20px;
+        font-style: initial;
+        font-size: 13px;
+    }
+    .navbar li a:hover,
+    .navbar li a.active{
+        text-decoration: underline;
+        color: rgb(21, 190, 125);
+
+    }
+    .right {
+        position: absolute;
+        right: 24px;
+        bottom: 33px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+    .btn{
+        background-color: black;
+        color: white;
+        padding: 5px;
+        font-size: 13px;
+        font-weight: bold;
+        border-radius: 10px;
+       
+    }
+    .btn:hover{
+        color: rgb(2, 27, 17);
+        background-color: rgb(165, 59, 86);
+    }
+    img{   
+        border: 2px solid rgb(15, 13, 13);
+        height: 600px;
+        width: 1250px;
+    }
+    .container{
+        border: 2px solid black;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        padding: 23px;
+        margin: 23px auto;
+        width: 40%;
+        border-radius: 15px;
+        height: 60%;
+    }
+    .form{
+        padding: 2px;
+        font-size: 23px;
+
+    }
+    .bttn{
+        padding: 15px;
+        display: block;
+        margin: 7px auto;
+    }
+
+</style>
+<body>
+    <header>
+        <img src="user3.jpg" alt="">
+        <div class="left">
+            <img src="gym.png" alt="">
+            <div>here zaheda's<br> classes</div>
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">buy books</a></li>
+                <li><a href="#">contact us</a></li>
+                <li><a href="#">More info</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h3>Welcome to Zaheda Classes</h2>
+        <form action="noaction.php">
+            <div class="form">
+                <input type="text" name="Name" placeholder="enter your name">
+            </div>
+            <div class="form">
+                <input type="text" name="Age" placeholder="enter your Age">
+            </div>
+            <div class="form">
+                <input type="text" name="Gender" placeholder="enter your Gender">
+            </div>
+            <div class="form">
+                <input type="text" name="Address" placeholder="enter your Address">
+            </div>
+            <div class="form">
+                <input type="text" name="Phone Number" placeholder="enter your phone Number">
+            </div>
+            <div class="form">
+                <input type="text" name="Email ID" placeholder="enter your phone email id">
+            </div>
+            <div class="bttn">
+                <button class="btn"> Submit</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
